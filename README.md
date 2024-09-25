@@ -3,8 +3,9 @@ An application to test some concepts of mult tenant app using EF Core
 
 
 # Run docker compose in the root folder
+```
 docker-compose up -d
-
+```
 # create table 
 ```SQL
 CREATE TABLE Product
