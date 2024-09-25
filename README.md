@@ -6,6 +6,7 @@ An application to test some concepts of mult tenant app using EF Core
 docker-compose up -d
 
 # create table 
+```SQL
 CREATE TABLE Product
 (
     Id INT IDENTITY(1,1) PRIMARY KEY,         
@@ -17,10 +18,8 @@ CREATE TABLE Product
     CreatedDate DATETIME NOT NULL DEFAULT GETDATE(), 
     UpdatedDate DATETIME NULL               
 );
-
-USE [TenantOne]
-GO
-
+````
+```SQL
 INSERT INTO [dbo].[Product]
            ([Name]
            ,[CostPrice]
@@ -38,5 +37,5 @@ INSERT INTO [dbo].[Product]
            ,SYSDATETIME()
            ,SYSDATETIME())
 GO
-
+```
 
